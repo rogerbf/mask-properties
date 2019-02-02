@@ -1,0 +1,57 @@
+{
+  "name": "mask-properties",
+  "version": "1.0.0",
+  "description": "mask object properties",
+  "main": "build/mask-properties.cjs.js",
+  "module": "build/mask-properties.esm.js",
+  "browser": "build/mask-properties.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "test": "jest",
+    "test:development": "NODE_ENV=development jest",
+    "develop": "npm run test:development -- --watch",
+    "coverage": "npm run test:development -- --coverage"
+  },
+  "keywords": [
+    "camouflage",
+    "conceal",
+    "cover up",
+    "hide",
+    "obscure",
+    "shield",
+    "veil",
+    "blanket",
+    "object",
+    "field",
+    "fields",
+    "select",
+    "extract"
+  ],
+  "files": [
+    "build"
+  ],
+  "author": "rogerbf <roger@bergfa.lk> (https://bergfa.lk/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/plugin-transform-modules-commonjs": "7.2.0",
+    "@babel/preset-env": "7.3.1",
+    "babel-jest": "24.0.0",
+    "eslint": "5.13.0",
+    "jest": "24.0.0",
+    "rollup": "1.1.2",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-commonjs": "9.2.0",
+    "rollup-plugin-node-resolve": "4.0.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/mask-properties.git"
+  },
+  "homepage": "https://github.com/rogerbf/mask-properties#readme"
+}
