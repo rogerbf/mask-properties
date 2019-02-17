@@ -11,6 +11,16 @@ describe(`mask`, () => {
     expect(mask()).toEqual(undefined)
   })
 
+  test(`({ a: 'a' })`, () => {
+    expect(mask({ a: `a` })).toEqual({})
+  })
+
+  test(`({ a: 'a' }, undefined)`, () => {
+    expect(() => mask({ a: `a` }, undefined)).toThrow(
+      `Expected mask to be [object Object], got [object Undefined]`
+    )
+  })
+
   test(`({ a: { b: { c: 'c' } } }, { a: true })`, () => {
     expect(mask({ a: { b: { c: `c` } } }, { a: true })).toEqual({
       a: { b: { c: `c` } },
