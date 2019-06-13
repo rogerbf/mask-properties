@@ -7,15 +7,15 @@ const filter = (source, ...targets) =>
     ? targets.reduce((result, target) => {
         if (!isObject(target)) {
           throw new TypeError(
-            `Expected mask to be ${ {}.toString() }, got ${ Object.prototype.toString.call(
+            `Expected mask to be ${{}.toString()}, got ${Object.prototype.toString.call(
               target
-            ) }`
+            )}`
           )
         }
 
         return Object.assign(
           result,
-          Object.entries(target).reduce((result, [ key, value ]) => {
+          Object.entries(target).reduce((result, [key, value]) => {
             if (source.hasOwnProperty(key) && Boolean(value)) {
               return Object.assign(result, {
                 [key]:
