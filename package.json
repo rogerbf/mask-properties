@@ -12,7 +12,8 @@
     "test:development": "NODE_ENV=development jest",
     "develop": "npm run test:development -- --watch",
     "coverage": "npm run test:development -- --coverage",
-    "lint": "eslint --fix . && echo 'Done linting.'"
+    "lint": "eslint --fix . && echo 'Done linting.'",
+    "prepare": "npm run test"
   },
   "keywords": [
     "camouflage",
