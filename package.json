@@ -1,6 +1,6 @@
 {
   "name": "mask-properties",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mask object properties",
   "main": "build/mask-properties.cjs.js",
   "module": "build/mask-properties.esm.js",
